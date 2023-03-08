@@ -1,0 +1,39 @@
+.Layout {
+    height: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 15% 80% 5%;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.Layout>header,
+.Layout>footer {
+    grid-column: span 6;
+}
+
+.Layout>main {
+    grid-column: span 5;
+    height: 113%;
+    display: flex;
+    justify-content: center;
+    overflow: scroll;
+    overflow-x: none;
+}
+
+.Layout>aside {
+    grid-column: span 1;
+}
+
+.Layout>main::-webkit-scrollbar {
+    width: 25px;
+}
+
+.Layout>main::-webkit-scrollbar-track {
+    border: 1px solid #232943;
+    box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.Layout>main::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #ac68cc, #53c8dd);
+    border-radius: 3px;
+}

@@ -1,0 +1,375 @@
+{
+	"info": {
+		"_postman_id": "b2c51a46-025a-401c-ab0d-8f01f456c291",
+		"name": "Vacations REST API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23516167"
+	},
+	"item": [
+		{
+			"name": "GET all vacations per user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/vacations/19",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"vacations",
+						"19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all vacations for admin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/vacations/19",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"vacations",
+						"19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST new vacation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "description",
+							"value": "asdfghjkldsddp",
+							"type": "text"
+						},
+						{
+							"key": "destination",
+							"value": "london",
+							"type": "text"
+						},
+						{
+							"key": "imageName",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "checkIn",
+							"value": "2022",
+							"type": "text"
+						},
+						{
+							"key": "checkOut",
+							"value": "2023-01-16",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "1000$",
+							"type": "text"
+						},
+						{
+							"key": "followersAmount",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/97254/Desktop/Third project/Backend/src/1-assets/images/london.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/vacations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"vacations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT exist vacation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "description",
+							"value": "asdfghjkldsddp",
+							"type": "text"
+						},
+						{
+							"key": "destination",
+							"value": "london",
+							"type": "text"
+						},
+						{
+							"key": "imageName",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "checkIn",
+							"value": "2022",
+							"type": "text"
+						},
+						{
+							"key": "checkOut",
+							"value": "2023-01-16",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "1000$",
+							"type": "text"
+						},
+						{
+							"key": "followersAmount",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/97254/Desktop/Third project/Backend/src/1-assets/images/london.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/vacations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"vacations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE exist vacatation",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/vacations/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"vacations",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE exist follower",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/vacations/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"vacations",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"bart\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Michael\",\r\n    \"lastName\": \"Vareikis\",\r\n    \"username\": \"misha\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADD follower",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": 29,\r\n    \"vacationId\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/followers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"followers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET image",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/vacations/images/f99fa85e-3abd-4f0f-9ef5-88988500a5b0.jpg",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"vacations",
+						"images",
+						"f99fa85e-3abd-4f0f-9ef5-88988500a5b0.jpg"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET followed vacations",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJJZCI6MjksImZpcnN0TmFtZSI6IkJhcnQgIiwibGFzdE5hbWUiOiJTaW1wc29uIiwidXNlcm5hbWUiOiJiYXJ0Iiwicm9sZUlkIjoyfSwiaWF0IjoxNjc0NTY4Mjc0LCJleHAiOjE2NzQ1NzkwNzR9._-ib2pL7dYIP5rml0yxk-Ey2knwF7Uv0wv3Bk3WE2Ec",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

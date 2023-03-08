@@ -1,0 +1,14 @@
+.PageNotFound {
+    margin-right: 130px;
+}
+
+.PageNotFound>p {
+    font-family: Ink Free;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.PageNotFound>iframe {
+    border-radius: 10px;
+    border: none;
+}

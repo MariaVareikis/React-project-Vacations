@@ -1,0 +1,35 @@
+html,
+body,
+#root {
+    height: 96%;
+    text-align: center;
+    background-image: url("../src/Assets/Images/background2.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+form {
+    width: 250px;
+    text-align: left;
+}
+
+form>h2 {
+    text-align: center;
+}
+
+form>input,
+form>button {
+    width: 122%;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+}
+
+.Error {
+    color: rgba(131, 28, 134, 0.997);
+    box-shadow: 4px 4px 6px;
+    position: relative;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 8px;
+    background-color: rgba(255, 255, 255, 0.526);
+}

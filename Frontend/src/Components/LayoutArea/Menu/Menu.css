@@ -1,0 +1,25 @@
+.Menu {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding-top: 20px;
+}
+
+.Menu>.active {
+    color: rgba(84, 160, 235, 0.997);
+    font-weight: bold;
+}
+
+.Menu>a {
+    margin-top: -10px;
+    color: white;
+    font-size: x-large;
+    font-family: Segoe Print;
+    text-align: left;
+    margin-left: 10px;
+    box-shadow: 5px 5px 5px;
+}
+
+.Menu>a:hover {
+    color: rgb(227, 19, 133);
+}

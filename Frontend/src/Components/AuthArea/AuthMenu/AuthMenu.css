@@ -1,0 +1,36 @@
+.AuthMenu {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.AuthMenu>a {
+    font-family: Segoe Print;
+    font-weight: bold;
+    font-size: x-large;
+    box-shadow: 5px 5px 5px;
+}
+
+.AuthMenu>span {
+    font-family: Segoe Print;
+    font-size: large;
+    font-weight: bold;
+}
+
+.AuthMenu>.active {
+    color: rgb(236, 12, 236);
+    font-weight: bold;
+}
+
+.AuthMenu>a {
+    margin-top: -10px;
+    color: white;
+    font-size: large;
+    font-family: Segoe Print;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.AuthMenu>a:hover {
+    color: rgb(249, 168, 212);
+}

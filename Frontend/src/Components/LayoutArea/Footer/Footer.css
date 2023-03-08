@@ -1,0 +1,13 @@
+.Footer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 56px;
+}
+
+.Footer>h3 {
+    font-family: Ink Free;
+    font-weight: bold;
+    color: white;
+}

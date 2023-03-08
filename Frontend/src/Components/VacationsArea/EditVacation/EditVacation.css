@@ -1,0 +1,29 @@
+.EditVacation img {
+    float: right;
+    width: 54px;
+    height: 50px;
+    margin-top: -108px;
+    margin-right: -49px;
+    border-radius: 10px;
+    border: 2px solid #8707ff;
+}
+
+.EditVacation {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 80%;
+    text-align: center;
+    padding: 20px 20px;
+    width: 300px;
+    margin: 10px 30px;
+    direction: ltr;
+    font-family: Ink Free;
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+    backdrop-filter: blur(15px);
+}
+
+.EditVacation input {
+    color: white;
+}

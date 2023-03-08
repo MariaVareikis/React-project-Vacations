@@ -1,0 +1,51 @@
+.VacationsList>.FollowedVacations {
+    position: absolute;
+    right: 5%;
+    top: 9%;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: Ink Free;
+}
+
+.VacationsList>.Container {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 40% 40%;
+    gap: 30px;
+    padding: 10px;
+    margin-right: 228px;
+
+}
+
+.VacationsList>.Pagination {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: medium;
+    gap: 20px;
+    margin-left: -170px;
+}
+
+.VacationsList>.Pagination>button {
+    padding: 0.7em 2em;
+    color: black;
+    width: 150px;
+}
+
+.VacationsList>.Pagination>span {
+    margin-top: 15px;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Ink Free;
+    color: white;
+}
+
+.VacationsList>.AdminsContainer {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 50% 50%;
+    gap: 30px;
+    padding: 10px;
+}

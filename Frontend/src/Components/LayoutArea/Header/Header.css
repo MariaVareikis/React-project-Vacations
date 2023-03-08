@@ -1,0 +1,23 @@
+.Header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Header>h1 {
+    font-size: 60px;
+    color: rgb(57, 25, 88);
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px rgb(219, 194, 234), 0 0 20px rgb(203, 173, 220), 0 0 30px rgba(191, 123, 255, 0.781), 0 0 40px rgba(191, 123, 255, 0.781), 0 0 50px rgb(100, 61, 136), 0 0 60px rgb(81, 41, 118), 0 0 70px rgb(66, 35, 96);
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px rgba(191, 123, 255, 0.781), 0 0 40px rgba(191, 123, 255, 0.781), 0 0 50px rgb(100, 61, 136), 0 0 60px rgb(100, 61, 136), 0 0 70px rgb(74, 36, 109), 0 0 80px rrgb(67, 35, 97)
+    }
+}
